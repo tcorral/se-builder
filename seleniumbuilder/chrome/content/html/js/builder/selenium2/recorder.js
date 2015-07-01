@@ -51,6 +51,35 @@ builder.selenium2.Recorder = function(top_window, recordStep, getLastRecordedSte
 };
 
 builder.selenium2.Recorder.prototype = {
+    /** 
+   * Write step to switch to the current active frame if it's changed
+   */
+  writeJsonSwitchFrameIfNeeded: function(element) {
+    this.element_window = element.ownerDocument.defaultView;
+    if (this.current_window !== this.element_window) {
+        //'windows tree' path from root-1 level to element_window
+        var frames = [];
+        var tempWindow = this.element_window;
+        while (this.top_window !== tempWindow) {
+            frames.push(tempWindow);
+            tempWindow = tempWindow.parent;
+        }
+        frames.reverse();
+       
+        var frameIndex = frames.indexOf(this.current_window);
+        if (this.current_window && //undefined => already on top_window
+            this.current_window !== this.top_window &&
+            frameIndex === -1)     //-1 => it's not a descendant of current_window
+        { 
+            this.recordStep(new builder.Step(builder.selenium2.stepTypes.switchToDefaultContent));
+        }
+        var startFrameIndex = frameIndex + 1;
+        for (var i = startFrameIndex; i < frames.length; i++) {            
+            this.recordStep(new builder.Step(builder.selenium2.stepTypes.switchToFrame, frames[i].name));
+        }
+        this.current_window = this.element_window;
+    }
+  },
   /**
    * Record mouseovers to ensure that eg CSS hovers work correctly.
    */
@@ -67,6 +96,8 @@ builder.selenium2.Recorder.prototype = {
   writeJsonClicks: function(e) {
     var locator = builder.locator.fromElement(e.target, /*applyTextTransforms*/ true);
     var lastStep = this.getLastRecordedStep(); //builder.getScript().getLastStep();
+    
+    this.writeJsonSwitchFrameIfNeeded(e.target);
     
     // Selects are handled via change events, so clicks on them can be ignored.
     if ({ 'select': true, 'option': true }[e.target.tagName.toLowerCase()]) { return; }
