@@ -508,6 +508,12 @@ builder.selenium2.Recorder.prototype = {
     // Remember that this frame has been bound to.
     this.bound.push(frame);
     
+    var bound = this.bound;
+    jQuery(frame).one('unload', function() {
+        var index = bound.indexOf(this);
+        bound.splice(index, 1);
+    });
+    
     // Turns out there are cases where people are canceling click on purpose, so I am manually
     // going to attach click listeners to all links.
     var links = frame.document.getElementsByTagName('a');
