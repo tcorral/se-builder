@@ -34,4 +34,4 @@ A test development environment for Selenium 1 and 2
   * Jérôme Kowalczyk ([jkowalczyk](https://github.com/jkowalczyk))
   * Nick Schonning ([nschonni](https://github.com/nschonni))
 
-## Thanks!!
+## Thanks!
