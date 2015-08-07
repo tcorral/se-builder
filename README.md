@@ -1,4 +1,4 @@
-# Selenium Builder [![Build Status](https://secure.travis-ci.org/sebuilder/se-builder.png)](http://travis-ci.org/sebuilder/se-builder)
+# Selenium Builder [![Build Status](https://travis-ci.org/SeleniumBuilder/se-builder.svg?branch=master)](http://travis-ci.org/SeleniumBuilder/se-builder)
 
 [![Selenium Test Status](https://saucelabs.com/browser-matrix/sebuilder.svg)](https://saucelabs.com/u/sebuilder)
 
