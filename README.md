@@ -1,3 +1,5 @@
+### [Read: Builder is forking!](https://github.com/SeleniumBuilder/selenium-builder)
+
 # Selenium Builder [![Build Status](https://travis-ci.org/SeleniumBuilder/se-builder.svg?branch=master)](http://travis-ci.org/SeleniumBuilder/se-builder)
 
 [![Selenium Test Status](https://saucelabs.com/browser-matrix/sebuilder.svg)](https://saucelabs.com/u/sebuilder)
