@@ -1,0 +1,25 @@
+{
+  "repositoryVersion": 1,
+  "description": "List of known Selenium Builder 3 plugins.",
+  "plugins": [
+    {
+      "identifier": "sauce",
+      "name": "Sauce for Selenium Builder 3",
+      "description": "Enables export and playback on Sauce OnDemand.",
+      "description_de": "Ermöglicht Export für und Abspielen auf Sauce OnDemand",
+      "siteUrl": "http://saucelabs.github.com/sb-sauce-plugin/",
+      "screenshot": "http://saucelabs.github.com/sb-sauce-plugin/img/screenshot.png",
+      "icon": "http://saucelabs.github.com/sb-sauce-plugin/img/icon.png",
+      "license":"Copyright 2015 Sauce Labs\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License.\n\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",
+      "browsers": {
+        "firefox": {
+          "pluginVersion": "1.0",
+          "builderMinVersion": "3.0",
+          "builderMaxVersion": "3.0.*",
+          "downloadUrl": "http://saucelabs.github.com/sb-sauce-plugin/sauce-sb3-1-0.zip"
+        }
+      }
+    }
+  ]
+}
+
