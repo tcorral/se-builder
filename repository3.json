@@ -35,6 +35,22 @@
           "downloadUrl": "https://github.com/crossbrowsertesting/SeBuilder-Plugin/raw/master/crossbrowsertesting-builder.zip"
         }
       }
+    },
+    {
+      "identifier": "testingbot",
+      "name": "TestingBot for Selenium Builder 3",
+      "description": "Enables export and playback on TestingBot.",
+      "siteUrl": "http://testingbot.com/support/other/se-builder",
+      "screenshot": "https://testingbot.com/assets/builder/sebuilder.jpg",
+      "icon": "http://testingbot.com/assets/builder/icon.png",
+      "browsers": {
+        "firefox": {
+          "pluginVersion": "1.0.0",
+          "builderMinVersion": "3.0",
+          "builderMaxVersion": "3.0.*",
+          "downloadUrl": "http://testingbot.com/testingbot-builder-v3.zip"
+        }
+      }
     }
   ]
 }
