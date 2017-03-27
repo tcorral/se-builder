@@ -1,6 +1,6 @@
-### [Read: Builder is forking!](https://github.com/SeleniumBuilder/selenium-builder)
+# Selenium Builder, Legacy Version [![Build Status](https://travis-ci.org/SeleniumBuilder/se-builder.svg?branch=master)](http://travis-ci.org/SeleniumBuilder/se-builder)
 
-# Selenium Builder [![Build Status](https://travis-ci.org/SeleniumBuilder/se-builder.svg?branch=master)](http://travis-ci.org/SeleniumBuilder/se-builder)
+### [Development is ongoing with Builder 3.](https://github.com/SeleniumBuilder/selenium-builder)
 
 [![Selenium Test Status](https://saucelabs.com/browser-matrix/sebuilder.svg)](https://saucelabs.com/u/sebuilder)
 
