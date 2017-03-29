@@ -13,7 +13,7 @@ A test development environment for Selenium 1 and 2
 
 ## Resources
 
-  * Splash Site - http://sebuilder.com
+  * Splash Site - http://seleniumbuilder.com
   * GitHub - http://github.com/sebuilder/se-builder
   * Mailing list - https://groups.google.com/d/forum/se-builder
   * Issues - https://github.com/sebuilder/se-builder/issues
